@@ -1,4 +1,4 @@
-package timo.ngimuReader.utils;
+package tspl.ngimuReader.utils;
 public class FindIndices{
 	public int init;
 	FindIndices(int init){

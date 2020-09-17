@@ -1,4 +1,4 @@
-package timo.ngimuReader;
+package tspl.ngimuReader;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedWriter;
@@ -14,13 +14,12 @@ import java.util.Arrays;
 import java.util.List;
 
 import au.com.bytecode.opencsv.CSVWriter;
-//Custom classes
-import timo.ngimuReader.utils.Slip;
-import timo.ngimuReader.utils.SlipIndices;
-import timo.ngimuReader.utils.OSC;
-import timo.ngimuReader.utils.OSCObject;
-import timo.ngimuReader.utils.OSCBundle;
-import timo.ngimuReader.utils.OSCControl;
+import tspl.ngimuReader.utils.OSC;
+import tspl.ngimuReader.utils.OSCBundle;
+import tspl.ngimuReader.utils.OSCControl;
+import tspl.ngimuReader.utils.OSCObject;
+import tspl.ngimuReader.utils.Slip;
+import tspl.ngimuReader.utils.SlipIndices;
 
 public class NGIMUMEMORYReader extends NGIMUReader {
 	ArrayList<ArrayList<Double>> sensorData = null;
@@ -77,12 +76,12 @@ public class NGIMUMEMORYReader extends NGIMUReader {
 			// Decode OSC packages here
 			OSCObject oObj = OSC.decode(oscFrame);
 			// Handle controls
-			if (oObj instanceof timo.ngimuReader.utils.OSCControl) {
+			if (oObj instanceof tspl.ngimuReader.utils.OSCControl) {
 				OSCControl oCon = (OSCControl) oObj;
 				handleControl(oCon);
 			}
 			// Handle bundles
-			if (oObj instanceof timo.ngimuReader.utils.OSCBundle) {
+			if (oObj instanceof tspl.ngimuReader.utils.OSCBundle) {
 				OSCBundle oBun = (OSCBundle) oObj;
 				for (int b = 0; b < oBun.controls.size(); ++b) {
 					handleControl(oBun.controls.get(b), oBun.seconds, oBun.rational);

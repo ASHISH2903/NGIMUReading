@@ -1,4 +1,4 @@
-package timo.ngimuReader.utils;
+package tspl.ngimuReader.utils;
 public class SlipIndices extends FindIndices{
 	public int end;
 	SlipIndices(int init, int end){

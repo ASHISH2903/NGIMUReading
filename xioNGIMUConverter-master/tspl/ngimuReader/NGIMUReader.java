@@ -1,4 +1,4 @@
-package timo.ngimuReader;
+package tspl.ngimuReader;
 import java.util.ArrayList;
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;

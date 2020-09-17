@@ -1,4 +1,4 @@
-package timo.ngimuReader.utils;
+package tspl.ngimuReader.utils;
 import java.util.Arrays;
 import java.util.ArrayList;
 

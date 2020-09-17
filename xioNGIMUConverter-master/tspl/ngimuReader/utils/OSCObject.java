@@ -1,4 +1,4 @@
-package timo.ngimuReader.utils;
+package tspl.ngimuReader.utils;
 
 public abstract class OSCObject{
 	
