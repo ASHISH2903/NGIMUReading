@@ -3,4 +3,4 @@ An attempt to implement a reader for x-io (http://x-io.co.uk/) files logged to a
 Written by Timo Rantalainen 2016 (tjrantal at gmail dot com). Released to the public domain.
 
 Compile (in windows)
-javac -cp "." timo\ngimuReader\NGIMUMEMORYReader.java
+javac -cp "." tspl\ngimuReader\NGIMUMEMORYReader.java
